@@ -1,5 +1,5 @@
 #!/bin/bash
-## Author: Nawar 
+## Author: Nawar, really small changes by Mister-Espria 
 ## License: GPL (c) 2014
 ##
 ## Note:
@@ -14,9 +14,10 @@
  
 ## Configure your KODI RPC details here
 #set -x
+args=("$@")
  
-KODI_HOST=127.0.0.1
-KODI_PORT=8080
+KODI_HOST=${args[2]}
+KODI_PORT=${args[3]}
 KODI_USER=
 KODI_PASS=
 LOCK=false
